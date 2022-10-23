@@ -1,0 +1,11 @@
+﻿<div id="copyright" class="copyright">
+    Copyright © @CompanyName @CurrentYear
+</div>
+
+@code {
+    [Parameter]
+    public string CompanyName { get; set; } = "My Big Corp";
+
+    [Parameter]
+    public int CurrentYear { get; set; } = DateTime.Now.Year;
+}
